@@ -1,0 +1,8 @@
+services:
+  infinite:
+    build: .
+    # Coolify route le domaine vers ce port automatiquement
+    environment:
+      - SERVICE_FQDN_INFINITE_8000
+    expose:
+      - "8000"
